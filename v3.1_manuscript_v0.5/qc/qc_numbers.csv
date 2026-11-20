@@ -1,0 +1,150 @@
+claim,stated,recomputed,raw,ok
+EduBloom templates with >1 label (%),92.8,92.8485,92.8485073932856,True
+EduBloom n,73712.0,73712.0,73712.0,True
+Metadata-only internal acc (%),50.0,50.0,50.0,True
+Frozen DistilBERT internal acc (%),50.9,50.8667,50.866666666666674,True
+Frozen LR internal acc (%),48.2,48.2,48.199999999999996,True
+DistilBERT L4 predictions,0.0,0.0,0.0,True
+DistilBERT L2 predictions,3.0,3.0,3.0,True
+JS distance L5-L6,0.217,0.2169,0.2168556534109484,True
+YouLeQD relevant n,70.0,70.0,70.0,True
+DistilBERT correct /70,26.0,26.0,26.0,True
+LR correct /70,23.0,23.0,23.0,True
+Majority correct /70,26.0,26.0,26.0,True
+kappa DistilBERT,0.107,0.1067,0.10672853828306261,True
+kappa LR,0.096,0.0964,0.0964020873386432,True
+DistilBERT L1 predictions /300,240.0,240.0,240.0,True
+Human LOO G6,0.686,0.6857,0.6857142857142855,True
+Best constant G6,0.738,0.7381,0.738095238095238,True
+Best constant G3,0.552,0.5524,0.5523809523809524,True
+Best constant G2,0.481,0.481,0.480952380952381,True
+LLM vote loss G6,0.59,0.5905,0.5904761904761904,True
+H1 diff (pp),-2.9,-2.8571,-2.85714285714285,True
+H1 CI lo,-12.2,-12.1623,-12.16234091234091,True
+H1 CI hi,6.8,6.8497,6.8496508192317895,True
+H2 oracle diff (pp),-8.1,-8.1293,-8.12925570380863,True
+H2 oracle CI hi,-1.5,-1.4601,-1.4601468360779,True
+H2 gate diff (pp),-1.0,-1.0464,-1.04635263239735,True
+H2 gate CI hi,0.4,0.3715,0.37149554097772,True
+Video-level FCR max (%),1.5,1.475,1.4749999999999999,True
+Row CP FCR max (%),13.0,12.95,12.950000000000001,True
+"Power J=236 (true .4, ICC 0) %",84.7,84.7,84.7,True
+Power J=120 %,53.2,53.25,53.25,True
+Phase 63 min p over grid,0.986,0.9865,0.9864950346641584,True
+Expert-expert kappa,0.864,0.8641,0.8640948885102998,True
+Generator-e1 kappa,0.638,0.6384,0.6384063021672963,True
+Generator-e2 kappa,0.725,0.7248,0.7248410280495114,True
+Scaria both-rated n,2071.0,2071.0,2071.0,True
+Expert-expert exact (%),88.8,88.7977,88.79768227909223,True
+H5 diff (pp),0.04,0.0429,0.042936882782310004,True
+H6 diff (pp),0.2,0.2147,0.21468441391154,True
+CL-ALL (pp),-4.6,-4.6372,-4.6371833404894796,True
+H11a rho,0.93,0.9286,0.9285714285714288,True
+H11a p,0.0011,0.0011,0.0011160714285714,True
+H11b rho,0.69,0.6905,0.6904761904761906,True
+H11b p,0.035,0.0347,0.0346974206349206,True
+TF-IDF skill rho,0.95,0.9524,0.9523809523809524,True
+emb skill p,0.16,0.1634,0.1634176587301587,True
+SCAR-I G0 lift (pp),70.9,70.8627,70.86274509803921,True
+SCAR-I transfer (%),46.1,46.1118,46.11179655206405,True
+YAHYA G0 lift (pp),58.8,58.7646,58.764607679465776,True
+YAHYA transfer (%),50.4,50.3888,50.388824574594935,True
+SCAR-E G0 lift (pp),57.7,57.7488,57.74877650897226,True
+SCAR-E transfer (%),42.1,42.1395,42.13945267684431,True
+MOHOM G0 lift (pp),40.5,40.4762,40.476190476190474,True
+MOHOM transfer (%),33.6,33.6336,33.63359023825066,True
+SANGO G0 lift (pp),23.7,23.7288,23.728813559322028,True
+SANGO transfer (%),36.1,36.1199,36.11991176833637,True
+GANI G0 lift (pp),13.0,12.9958,12.99578059071729,True
+GANI transfer (%),27.1,27.1176,27.1176413108572,True
+EDUB G0 lift (pp),0.04,0.0392,0.0392156862745,True
+EDUB transfer (%),29.3,29.2914,29.29139373672517,True
+EDUQG G0 lift (pp),0.0,0.0,0.0,True
+EDUQG transfer (%),17.2,17.1827,17.18271980449116,True
+H9a rho,0.7,0.7,0.7,True
+H9c p,0.175,0.175,0.175,True
+H10 diff,-0.148,-0.1476,-0.1476190476190476,True
+H10 CI lo,-0.232,-0.2325,-0.2324561403508771,True
+H10 CI hi,-0.065,-0.0648,-0.0648148148148148,True
+LLM EduQG skill (pp),-4.1,-4.0975,-4.09745293466223,True
+Smallest Holm p,0.21,0.209,0.2089559435844421,True
+H12a rho,0.83,0.8333,0.8333333333333335,True
+H12a p,0.0077,0.0077,0.007688492063492,True
+H12b rho,0.93,0.9341,0.934148484292342,True
+H12b p,0.0008,0.0008,0.0008432539682539,True
+k=6 rho (both),0.94,0.9429,0.942857142857143,True
+k=6 p,0.0083,0.0083,0.0083333333333333,True
+reference-model rho,0.62,0.619,0.6190476190476191,True
+reference-model p,0.057,0.0575,0.0574900793650793,True
+distilbert SANGO top-class share >= 0.98,1.0,1.0,1.0,True
+distilbert MOHOM top-class share >= 0.98,1.0,1.0,1.0,True
+roberta SANGO top-class share >= 0.98,1.0,1.0,1.0,True
+roberta MOHOM top-class share >= 0.98,1.0,1.0,1.0,True
+DistilBERT SCAR-E diff vs const,-0.09,-0.0905,-0.0904761904761904,True
+its CI hi,-0.013,-0.0133,-0.0133333333333333,True
+RoBERTa SCAR-I CI hi,-0.014,-0.0141,-0.0140845070422535,True
+RoBERTa SCAR-E CI hi,-0.005,-0.0049,-0.0049019607843137,True
+min Holm p of three best,0.27,0.266,0.266,True
+max Holm p of three best,0.45,0.4536,0.4536,True
+MOHOM correct /70,0.0,0.0,0.0,True
+LLM better than # models,12.0,12.0,12.0,True
+LLM - DistilBERT SCAR-E,-0.057,-0.0571,-0.0571428571428571,True
+its CI hi,0.034,0.0343,0.034313725490196,True
+max |G0 diff| p70 vs p73,0.01,0.01,0.01,True
+max YLQ diff p70 vs p73,3.0,3.0,3.0,True
+balance vs TF-IDF T,0.9,0.9048,0.9047619047619048,True
+partial both DistilBERT,0.67,0.6693,0.6692647893938635,True
+partial both RoBERTa,0.81,0.8103,0.8102518868505968,True
+partial both TF-IDF p > .05,1.0,1.0,1.0,True
+partial both emb p > .05,1.0,1.0,1.0,True
+partial | size significant tfidf,1.0,1.0,1.0,True
+partial | size significant emb,1.0,1.0,1.0,True
+partial | size significant distilbert,1.0,1.0,1.0,True
+partial | size significant roberta,1.0,1.0,1.0,True
+size-matched vs DistilBERT T,0.33,0.3333,0.3333333333333334,True
+first-word vs DistilBERT T,0.57,0.5714,0.5714285714285715,True
+first-word vs transformer p > .05,1.0,1.0,1.0,True
+skill rho DistilBERT,0.83,0.8333,0.8333333333333335,True
+skill rho RoBERTa,0.93,0.9341,0.934148484292342,True
+R3 DistilBERT rho,0.86,0.8571,0.8571428571428572,True
+R3 DistilBERT p,0.005,0.0054,0.0053571428571428,True
+R3 RoBERTa rho,0.83,0.8333,0.8333333333333335,True
+R3 RoBERTa p,0.008,0.0077,0.007688492063492,True
+SANGO top share min,0.34,0.339,0.3389830508474576,True
+SANGO top share max,0.36,0.3608,0.360774818401937,True
+MOHOM top share min,0.24,0.2381,0.238095238095238,True
+MOHOM top share max,0.29,0.2857,0.2857142857142857,True
+min dOOF small,0.42,0.4165,0.4164648910411622,True
+max dOOF small,0.51,0.5079,0.5079365079365079,True
+min dT small,0.18,0.1761,0.1761284354493286,True
+max dT small,0.32,0.3218,0.3217657497372039,True
+all small CI lo > 0,1.0,1.0,1.0,True
+unchanged corpora identical,0.0,0.0,0.0,True
+distilbert gate agreement P76,7.0,7.0,7.0,True
+distilbert gate agreement P73,5.0,5.0,5.0,True
+roberta gate agreement P76,7.0,7.0,7.0,True
+roberta gate agreement P73,5.0,5.0,5.0,True
+gap min small,0.16,0.1586,0.1586363685770099,True
+gap max small,0.29,0.2937,0.2936507936507936,True
+train acc SANGO/MOHOM = 1,1.0,1.0,1.0,True
+EDUQG P76 share min,0.81,0.8051,0.805094130675526,True
+EDUQG P76 share max,0.82,0.8173,0.8172757475083057,True
+TF-IDF ref P76 DistilBERT rho,0.86,0.8571,0.8571428571428572,True
+TF-IDF ref P76 RoBERTa rho,0.83,0.8333,0.8333333333333335,True
+firstword P76 DistilBERT rho,0.83,0.8333,0.8333333333333335,True
+firstword P76 RoBERTa rho,0.81,0.8095,0.8095238095238096,True
+firstword P76 max p,0.011,0.0109,0.0108878968253968,True
+sizematched P76 p min,0.057,0.0575,0.0574900793650793,True
+sizematched P76 p max,0.066,0.0661,0.0661458333333333,True
+both-covariate p min (v0.5 family),0.058,0.0585,0.0584573412698412,True
+both-covariate p max,0.25,0.2456,0.2455853174603174,True
+RoBERTa P73 both p,0.028,0.0282,0.0281746031746031,True
+size-controlled max p,0.042,0.0424,0.0424355158730158,True
+Holm TF-IDF size,0.022,0.0223,0.022321428571428,True
+only TF-IDF survives Holm,1.0,1.0,1.0,True
+sim FL valid min,0.045,0.045,0.045,True
+sim FL valid max,0.053,0.053,0.053,True
+sim FL liberal min,0.074,0.074,0.074,True
+sim FL liberal max,0.101,0.101,0.101,True
+skill P76 RoBERTa p,0.057,0.0575,0.0574900793650793,True
+skill P76 DistilBERT p,0.008,0.0077,0.007688492063492,True

@@ -1,0 +1,108 @@
+claim,stated,recomputed,ok
+EduBloom templates with >1 label (%),92.8,92.8485,True
+EduBloom n,73712.0,73712.0,True
+Metadata-only internal acc (%),50.0,50.0,True
+Frozen DistilBERT internal acc (%),50.9,50.8667,True
+Frozen LR internal acc (%),48.2,48.2,True
+DistilBERT L4 predictions,0.0,0.0,True
+DistilBERT L2 predictions,3.0,3.0,True
+JS distance L5-L6,0.217,0.2169,True
+YouLeQD relevant n,70.0,70.0,True
+DistilBERT correct /70,26.0,26.0,True
+LR correct /70,23.0,23.0,True
+Majority correct /70,26.0,26.0,True
+kappa DistilBERT,0.107,0.1067,True
+kappa LR,0.096,0.0964,True
+DistilBERT L1 predictions /300,240.0,240.0,True
+Human LOO G6,0.686,0.6857,True
+Best constant G6,0.738,0.7381,True
+Best constant G3,0.552,0.5524,True
+Best constant G2,0.481,0.481,True
+LLM vote loss G6,0.59,0.5905,True
+H1 diff (pp),-2.9,-2.8571,True
+H1 CI lo,-12.2,-12.1623,True
+H1 CI hi,6.8,6.8497,True
+H2 oracle diff (pp),-8.1,-8.1293,True
+H2 oracle CI hi,-1.5,-1.4601,True
+H2 gate diff (pp),-1.0,-1.0464,True
+H2 gate CI hi,0.4,0.3715,True
+Video-level FCR max (%),1.5,1.475,True
+Row CP FCR max (%),13.0,12.95,True
+"Power J=236 (true .4, ICC 0) %",84.7,84.7,True
+Power J=120 %,53.2,53.25,True
+Phase 63 min p over grid,0.986,0.9865,True
+Expert-expert kappa,0.864,0.8641,True
+Generator-e1 kappa,0.638,0.6384,True
+Generator-e2 kappa,0.725,0.7248,True
+Scaria both-rated n,2071.0,2071.0,True
+Expert-expert exact (%),88.8,88.7977,True
+H5 diff (pp),0.04,0.0429,True
+H6 diff (pp),0.2,0.2147,True
+CL-ALL (pp),-4.6,-4.6372,True
+H11a rho,0.93,0.9286,True
+H11a p,0.0011,0.0011,True
+H11b rho,0.69,0.6905,True
+H11b p,0.035,0.0347,True
+TF-IDF skill rho,0.95,0.9524,True
+emb skill p,0.16,0.1634,True
+SCAR-I G0 lift (pp),70.9,70.8627,True
+SCAR-I transfer (%),46.1,46.1118,True
+YAHYA G0 lift (pp),58.8,58.7646,True
+YAHYA transfer (%),50.4,50.3888,True
+SCAR-E G0 lift (pp),57.7,57.7488,True
+SCAR-E transfer (%),42.1,42.1395,True
+MOHOM G0 lift (pp),40.5,40.4762,True
+MOHOM transfer (%),33.6,33.6336,True
+SANGO G0 lift (pp),23.7,23.7288,True
+SANGO transfer (%),36.1,36.1199,True
+GANI G0 lift (pp),13.0,12.9958,True
+GANI transfer (%),27.1,27.1176,True
+EDUB G0 lift (pp),0.04,0.0392,True
+EDUB transfer (%),29.3,29.2914,True
+EDUQG G0 lift (pp),0.0,0.0,True
+EDUQG transfer (%),17.2,17.1827,True
+H9a rho,0.7,0.7,True
+H9c p,0.175,0.175,True
+H10 diff,-0.148,-0.1476,True
+H10 CI lo,-0.232,-0.2325,True
+H10 CI hi,-0.065,-0.0648,True
+LLM EduQG skill (pp),-4.1,-4.0975,True
+Smallest Holm p,0.21,0.209,True
+H12a rho,0.83,0.8333,True
+H12a p,0.0077,0.0077,True
+H12b rho,0.93,0.9341,True
+H12b p,0.0008,0.0008,True
+k=6 rho (both),0.94,0.9429,True
+k=6 p,0.0083,0.0083,True
+reference-model rho,0.62,0.619,True
+reference-model p,0.057,0.0575,True
+distilbert SANGO top-class share >= 0.98,1.0,1.0,True
+distilbert MOHOM top-class share >= 0.98,1.0,1.0,True
+roberta SANGO top-class share >= 0.98,1.0,1.0,True
+roberta MOHOM top-class share >= 0.98,1.0,1.0,True
+DistilBERT SCAR-E diff vs const,-0.09,-0.0905,True
+its CI hi,-0.013,-0.0133,True
+RoBERTa SCAR-I CI hi,-0.014,-0.0141,True
+RoBERTa SCAR-E CI hi,-0.005,-0.0049,True
+min Holm p of three best,0.27,0.266,True
+max Holm p of three best,0.45,0.4536,True
+MOHOM correct /70,0.0,0.0,True
+LLM better than # models,12.0,12.0,True
+LLM - DistilBERT SCAR-E,-0.057,-0.0571,True
+its CI hi,0.034,0.0343,True
+max |G0 diff| p70 vs p73,0.01,0.01,True
+max YLQ diff p70 vs p73,3.0,3.0,True
+balance vs TF-IDF T,0.9,0.9048,True
+partial both DistilBERT,0.67,0.6693,True
+partial both RoBERTa,0.81,0.8103,True
+partial both TF-IDF p > .05,1.0,1.0,True
+partial both emb p > .05,1.0,1.0,True
+partial | size significant tfidf,1.0,1.0,True
+partial | size significant emb,1.0,1.0,True
+partial | size significant distilbert,1.0,1.0,True
+partial | size significant roberta,1.0,1.0,True
+size-matched vs DistilBERT T,0.33,0.3333,True
+first-word vs DistilBERT T,0.57,0.5714,True
+first-word vs transformer p > .05,1.0,1.0,True
+skill rho DistilBERT,0.83,0.8333,True
+skill rho RoBERTa,0.93,0.9341,True

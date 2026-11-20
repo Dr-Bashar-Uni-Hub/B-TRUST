@@ -1,0 +1,189 @@
+{
+  "q_bt_human_label.csv": {
+    "rows": 300,
+    "columns": [
+      "vid",
+      "cid",
+      "subject",
+      "text",
+      "votes",
+      "replies",
+      "is_reply",
+      "label"
+    ],
+    "missing": {
+      "vid": 0,
+      "cid": 0,
+      "subject": 0,
+      "text": 0,
+      "votes": 0,
+      "replies": 226,
+      "is_reply": 0,
+      "label": 0
+    },
+    "sha256": "94eb0ec0ea414f4ceab4112bdf225974c22446cbd4033e958bd8b162e491820b",
+    "low_cardinality_columns": {
+      "subject": {
+        "bio": 60,
+        "chem": 60,
+        "math": 60,
+        "phy": 60,
+        "cs": 60
+      },
+      "votes": {
+        "0": 197,
+        "1": 44,
+        "2": 16,
+        "4": 7,
+        "3": 7,
+        "5": 5,
+        "8": 4,
+        "7": 3,
+        "6": 3,
+        "10": 2,
+        "23": 1,
+        "9": 1,
+        "34": 1,
+        "31": 1,
+        "266": 1,
+        "25": 1,
+        "67": 1,
+        "11": 1,
+        "141": 1,
+        "38": 1,
+        "210": 1,
+        "39": 1
+      },
+      "replies": {
+        "nan": 226,
+        "1.0": 46,
+        "2.0": 10,
+        "3.0": 7,
+        "4.0": 4,
+        "5.0": 2,
+        "7.0": 2,
+        "9.0": 1,
+        "12.0": 1,
+        "16.0": 1
+      },
+      "is_reply": {
+        "False": 236,
+        "True": 64
+      },
+      "label": {
+        "irrelevant": 230,
+        "comprehension": 26,
+        "knowledge": 19,
+        "analysis": 15,
+        "evaluation": 6,
+        "application": 4
+      }
+    }
+  },
+  "q_bt_human_label_raw.csv": {
+    "rows": 300,
+    "columns": [
+      "vid",
+      "cid",
+      "subject",
+      "text",
+      "votes",
+      "replies",
+      "is_reply",
+      "lebel1",
+      "lebel2",
+      "lebel3"
+    ],
+    "missing": {
+      "vid": 0,
+      "cid": 0,
+      "subject": 0,
+      "text": 0,
+      "votes": 0,
+      "replies": 226,
+      "is_reply": 0,
+      "lebel1": 0,
+      "lebel2": 0,
+      "lebel3": 0
+    },
+    "sha256": "67e3f66be4ee919aaab0a53bc974307fb6d244ba95dcd72879239d4926335c05",
+    "low_cardinality_columns": {
+      "subject": {
+        "bio": 60,
+        "chem": 60,
+        "math": 60,
+        "phy": 60,
+        "cs": 60
+      },
+      "votes": {
+        "0": 197,
+        "1": 44,
+        "2": 16,
+        "4": 7,
+        "3": 7,
+        "5": 5,
+        "8": 4,
+        "7": 3,
+        "6": 3,
+        "10": 2,
+        "23": 1,
+        "9": 1,
+        "34": 1,
+        "31": 1,
+        "266": 1,
+        "25": 1,
+        "67": 1,
+        "11": 1,
+        "141": 1,
+        "38": 1,
+        "210": 1,
+        "39": 1
+      },
+      "replies": {
+        "nan": 226,
+        "1.0": 46,
+        "2.0": 10,
+        "3.0": 7,
+        "4.0": 4,
+        "5.0": 2,
+        "7.0": 2,
+        "9.0": 1,
+        "12.0": 1,
+        "16.0": 1
+      },
+      "is_reply": {
+        "False": 236,
+        "True": 64
+      },
+      "lebel1": {
+        "irrelevant": 203,
+        "comprehension": 34,
+        "knowledge": 32,
+        "analysis": 19,
+        " irrelevant": 4,
+        "application": 3,
+        "comprehension ": 1,
+        " application": 1,
+        " comprehension": 1,
+        "synthesis": 1,
+        "evaluation": 1
+      },
+      "lebel2": {
+        "irrelevant": 264,
+        "analysis": 13,
+        "comprehension": 12,
+        "knowledge": 5,
+        "evaluation": 5,
+        "application": 1
+      },
+      "lebel3": {
+        "irrelevant": 213,
+        "analysis": 26,
+        "knowledge": 22,
+        "comprehension": 17,
+        "application": 14,
+        "evaluation": 8
+      }
+    }
+  }
+}

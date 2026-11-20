@@ -1,0 +1,19 @@
+granularity,predictor,vote_loss
+6 levels,Frozen EduBloom LR,0.7523809523809524
+6 levels,Frozen EduBloom DistilBERT,0.7476190476190476
+6 levels,Pooled human-authored LR,0.7238095238095238
+6 levels,Zero-shot LLM,0.5904761904761904
+6 levels,Best constant,0.738095238095238
+6 levels,Human (leave-one-out),0.6857142857142855
+3 bands,Frozen EduBloom LR,0.5952380952380953
+3 bands,Frozen EduBloom DistilBERT,0.5571428571428573
+3 bands,Pooled human-authored LR,0.5761904761904763
+3 bands,Zero-shot LLM,0.4857142857142857
+3 bands,Best constant,0.5523809523809524
+3 bands,Human (leave-one-out),0.6095238095238094
+2 bands,Frozen EduBloom LR,0.5619047619047618
+2 bands,Frozen EduBloom DistilBERT,0.4952380952380953
+2 bands,Pooled human-authored LR,0.4952380952380952
+2 bands,Zero-shot LLM,0.4047619047619047
+2 bands,Best constant,0.480952380952381
+2 bands,Human (leave-one-out),0.538095238095238

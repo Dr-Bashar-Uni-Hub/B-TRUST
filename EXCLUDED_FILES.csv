@@ -1,0 +1,25 @@
+original_archive_path,exclusion_reason
+README.md,Superseded working README with outdated phase statuses; replaced with release README
+SHA256_MANIFEST_v3.1.csv,Manifest of full private archive; not valid for filtered release
+confirmatory_study/stage1_sampling_frame.csv,Unlicensed learner comments and source identifiers; explicitly marked internal-only
+phase70_user_run/llm_results_and_validation_2026-11-19/received/p70_llm_abstentions.csv,Question text and model responses from externally sourced items
+phase70_user_run/llm_results_and_validation_2026-11-19/received/p70_llm_detailed.csv,Question text and model responses from externally sourced items
+phase73_v2_user_run/results_received_2026-11-19/p73_outputs.zip,Nested raw run archives; released files already expanded in the package
+phase76_ready_A1/results_received_2026-11-20/outputs/_write_test.txt,Temporary write test artifact
+phase76_ready_A1/results_received_2026-11-20/p76_outputs.zip,Nested raw run archives; released files already expanded in the package
+v2.2_phase71_and_checkpoint/data_faraji_MIT/Gani_2023_collected-dataset-1200_revised.csv,Third-party question-level datasets withheld from candidate pending licence/provenance review
+v2.2_phase71_and_checkpoint/data_faraji_MIT/Mohammed-and-Omar_2020_126_revised.csv,Third-party question-level datasets withheld from candidate pending licence/provenance review
+v2.2_phase71_and_checkpoint/data_faraji_MIT/Sangodiah_2017_415_revised.csv,Third-party question-level datasets withheld from candidate pending licence/provenance review
+v2.2_phase71_and_checkpoint/data_faraji_MIT/llm_generated_dataset_revised.csv,Third-party question-level datasets withheld from candidate pending licence/provenance review
+v2.2_phase71_and_checkpoint/data_faraji_MIT/yahya-2012_revised.csv,Third-party question-level datasets withheld from candidate pending licence/provenance review
+v2.2_phase71_and_checkpoint/outputs/p71_distilbert_internal_proba.csv,Question text embedded in per-item prediction file
+v2.3_provenance/phase37_archive/q_bt_human_label.csv,Raw third-party learner-question text and annotation records
+v2.3_provenance/phase37_archive/q_bt_human_label_raw.csv,Raw third-party learner-question text and annotation records
+v2.6_manuscript/BTRUST_Manuscript_v0.2.docx,Superseded manuscript or working draft; publication version to be added after corrections
+v2.6_manuscript/BTRUST_Manuscript_v0.2.pdf,Superseded manuscript or working draft; publication version to be added after corrections
+v2.7_manuscript/BTRUST_Manuscript_v0.3.docx,Superseded manuscript or working draft; publication version to be added after corrections
+v2.7_manuscript/BTRUST_Manuscript_v0.3.pdf,Superseded manuscript or working draft; publication version to be added after corrections
+v2.8_manuscript/BTRUST_Manuscript_v0.4.docx,Superseded manuscript or working draft; publication version to be added after corrections
+v2.8_manuscript/BTRUST_Manuscript_v0.4.pdf,Superseded manuscript or working draft; publication version to be added after corrections
+v3.1_manuscript_v0.5/BTRUST_Manuscript_v0.5.docx,Superseded manuscript or working draft; publication version to be added after corrections
+v3.1_manuscript_v0.5/BTRUST_Manuscript_v0.5.pdf,Superseded manuscript or working draft; publication version to be added after corrections
