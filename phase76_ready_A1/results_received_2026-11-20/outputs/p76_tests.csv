@@ -1,0 +1,3 @@
+model,rho,exact_p,R3_supported,R1_collapse_resolved,R2_not_FAIL,SANGO_G0,MOHOM_G0,PASS_above_FAIL
+distilbert,0.8571428571428572,0.005357142857142857,True,True,True,PASS,PASS,True
+roberta,0.8333333333333335,0.007688492063492063,True,True,True,PASS,PASS,True

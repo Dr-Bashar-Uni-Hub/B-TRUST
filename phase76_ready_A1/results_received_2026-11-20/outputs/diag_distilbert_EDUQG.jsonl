@@ -1,0 +1,6 @@
+{"tag":"distilbert|EDUQG|cv0","model":"distilbert-base-uncased","n_train":722,"epochs":7,"steps":322,"epoch_loss":[1.09283,0.82141,0.73134,0.61653,0.52422,0.45023,0.41999],"train_acc":0.8878116343}
+{"tag":"distilbert|EDUQG|cv1","model":"distilbert-base-uncased","n_train":722,"epochs":7,"steps":322,"epoch_loss":[1.10012,0.84418,0.74119,0.62652,0.55043,0.46285,0.45661],"train_acc":0.8933518006}
+{"tag":"distilbert|EDUQG|cv2","model":"distilbert-base-uncased","n_train":722,"epochs":7,"steps":322,"epoch_loss":[1.11145,0.81907,0.74078,0.62206,0.52943,0.44378,0.40457],"train_acc":0.891966759}
+{"tag":"distilbert|EDUQG|cv3","model":"distilbert-base-uncased","n_train":723,"epochs":7,"steps":322,"epoch_loss":[1.10903,0.81694,0.67958,0.58584,0.48009,0.40137,0.3665],"train_acc":0.8990318119}
+{"tag":"distilbert|EDUQG|cv4","model":"distilbert-base-uncased","n_train":723,"epochs":7,"steps":322,"epoch_loss":[1.1107,0.83767,0.72534,0.59941,0.51461,0.45794,0.39083],"train_acc":0.8921161826}
+{"tag":"distilbert|EDUQG|full","model":"distilbert-base-uncased","n_train":903,"epochs":6,"steps":342,"epoch_loss":[1.06192,0.79649,0.66083,0.55965,0.47192,0.42278],"train_acc":0.8815060908}

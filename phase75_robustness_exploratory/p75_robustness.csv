@@ -1,0 +1,33 @@
+model,analysis,rho,p
+tfidf,"G0 (own model) vs T, raw",0.9285714285714287,0.0011160714285714285
+tfidf,partial | log size,0.928756449478133,0.0008928571428571428
+tfidf,partial | majority share,0.5594309277855158,0.02748015873015873
+tfidf,partial | log size + majority share,0.43109342516465077,0.14717261904761905
+tfidf,log size vs T (descriptive),0.02395252523826518,
+tfidf,balance (−majority share) vs T (descriptive),0.9047619047619048,
+emb,"G0 (own model) vs T, raw",0.6904761904761906,0.03469742063492064
+emb,partial | log size,0.7039686862777278,0.028993055555555557
+emb,partial | majority share,0.3897969163928979,0.1734375
+emb,partial | log size + majority share,0.34836557675232027,0.19546130952380952
+emb,log size vs T (descriptive),-0.05988131309566294,
+emb,balance (−majority share) vs T (descriptive),0.6190476190476191,
+distilbert,"G0 (own model) vs T, raw",0.8333333333333335,0.007688492063492063
+distilbert,partial | log size,0.8085794206850543,0.009325396825396825
+distilbert,partial | majority share,0.7312724241271306,0.010763888888888889
+distilbert,partial | log size + majority share,0.6692647893938635,0.03040674603174603
+distilbert,log size vs T (descriptive),0.6347419188140273,
+distilbert,balance (−majority share) vs T (descriptive),0.6190476190476191,
+roberta,"G0 (own model) vs T, raw",0.934148484292342,0.0008432539682539683
+roberta,partial | log size,0.88859264430589,0.001959325396825397
+roberta,partial | majority share,0.8911327886790067,0.0005208333333333333
+roberta,partial | log size + majority share,0.8102518868505968,0.010218253968253968
+roberta,log size vs T (descriptive),0.6347419188140273,
+roberta,balance (−majority share) vs T (descriptive),0.6190476190476191,
+tfidf,size-matched TF-IDF G0 (n=126) vs T,0.6904761904761906,0.03469742063492064
+tfidf,first-word lookup lift (no training) vs T,0.880952380952381,0.003621031746031746
+emb,size-matched TF-IDF G0 (n=126) vs T,0.523809523809524,0.09831349206349206
+emb,first-word lookup lift (no training) vs T,0.7619047619047621,0.01837797619047619
+distilbert,size-matched TF-IDF G0 (n=126) vs T,0.3333333333333334,0.21393849206349205
+distilbert,first-word lookup lift (no training) vs T,0.5714285714285715,0.0755704365079365
+roberta,size-matched TF-IDF G0 (n=126) vs T,0.3333333333333334,0.21393849206349205
+roberta,first-word lookup lift (no training) vs T,0.5714285714285715,0.0755704365079365

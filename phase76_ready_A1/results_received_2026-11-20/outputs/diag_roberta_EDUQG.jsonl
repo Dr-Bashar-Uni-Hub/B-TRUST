@@ -1,0 +1,6 @@
+{"tag":"roberta|EDUQG|cv0","model":"roberta-base","n_train":722,"epochs":7,"steps":322,"epoch_loss":[1.03571,0.8224,0.7624,0.65162,0.55431,0.4459,0.38693],"train_acc":0.9168975069}
+{"tag":"roberta|EDUQG|cv1","model":"roberta-base","n_train":722,"epochs":7,"steps":322,"epoch_loss":[1.00413,0.78576,0.73367,0.58051,0.49213,0.36774,0.35765],"train_acc":0.9307479224}
+{"tag":"roberta|EDUQG|cv2","model":"roberta-base","n_train":722,"epochs":7,"steps":322,"epoch_loss":[1.02858,0.8121,0.77561,0.62409,0.52405,0.39183,0.33538],"train_acc":0.9238227147}
+{"tag":"roberta|EDUQG|cv3","model":"roberta-base","n_train":723,"epochs":7,"steps":322,"epoch_loss":[1.05363,0.81351,0.69954,0.63466,0.56676,0.44232,0.38939],"train_acc":0.9100968188}
+{"tag":"roberta|EDUQG|cv4","model":"roberta-base","n_train":723,"epochs":7,"steps":322,"epoch_loss":[1.04169,0.84771,0.76045,0.63404,0.52352,0.45469,0.36356],"train_acc":0.9225449516}
+{"tag":"roberta|EDUQG|full","model":"roberta-base","n_train":903,"epochs":6,"steps":342,"epoch_loss":[1.00562,0.83578,0.7441,0.64292,0.55595,0.49777],"train_acc":0.8648947951}

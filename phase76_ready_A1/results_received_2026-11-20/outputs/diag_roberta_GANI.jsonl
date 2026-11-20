@@ -1,0 +1,6 @@
+{"tag":"roberta|GANI|cv0","model":"roberta-base","n_train":948,"epochs":5,"steps":300,"epoch_loss":[1.42536,1.0305,0.58292,0.3668,0.27819],"train_acc":0.9462025316}
+{"tag":"roberta|GANI|cv1","model":"roberta-base","n_train":948,"epochs":5,"steps":300,"epoch_loss":[1.41754,1.02953,0.55859,0.35639,0.26887],"train_acc":0.947257384}
+{"tag":"roberta|GANI|cv2","model":"roberta-base","n_train":948,"epochs":5,"steps":300,"epoch_loss":[1.42208,0.98564,0.51724,0.32136,0.25358],"train_acc":0.9567510549}
+{"tag":"roberta|GANI|cv3","model":"roberta-base","n_train":948,"epochs":5,"steps":300,"epoch_loss":[1.40039,0.90871,0.46211,0.31447,0.23452],"train_acc":0.9609704641}
+{"tag":"roberta|GANI|cv4","model":"roberta-base","n_train":948,"epochs":5,"steps":300,"epoch_loss":[1.41034,0.99007,0.52299,0.32839,0.22807],"train_acc":0.9672995781}
+{"tag":"roberta|GANI|full","model":"roberta-base","n_train":1185,"epochs":4,"steps":300,"epoch_loss":[1.3602,0.93076,0.48785,0.32896],"train_acc":0.94092827}

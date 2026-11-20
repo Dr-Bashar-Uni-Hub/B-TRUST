@@ -1,0 +1,79 @@
+--- prereg_cell0
++++ A1_cell0
+@@ -14,3 +14,14 @@
+-OUT = '/content/p73_out'; os.makedirs(OUT, exist_ok=True)
+-# Optional: persist outputs to Google Drive so a disconnect loses nothing
+-# from google.colab import drive; drive.mount('/content/drive'); OUT = '/content/drive/MyDrive/BTRUST_p73_out'; os.makedirs(OUT, exist_ok=True)
++# ---- Google Drive is REQUIRED (approved protocol): all outputs, configs and checkpoints are written there ----
++from google.colab import drive; drive.mount('/content/drive')
++assert os.path.isdir('/content/drive/MyDrive'), 'Google Drive is not mounted'
++OUT = '/content/drive/MyDrive/BTRUST_p76_out'      # Phase 76 only; Phase 73 folders are never read or written
++assert 'p73' not in OUT.lower(), 'Refusing to write Phase 76 outputs into a Phase 73 location'
++os.makedirs(OUT, exist_ok=True)
++with open(f'{OUT}/_write_test.txt', 'w') as fh: fh.write('ok')
++SAVE_FULL_FIT_WEIGHTS = True   # 16 final models (8 corpora x 2), fp16 safetensors: about 1.1 GB DistilBERT + 2.0 GB RoBERTa
++SAVE_CV_FOLD_WEIGHTS = False   # 80 cross-validation fold models would need about 15 GB; fold predictions, losses and train accuracy are always saved
++import json as _json
++_json.dump(dict(torch=torch.__version__, transformers=transformers.__version__, python=platform.python_version(),
++                gpu=torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NONE',
++                save_full_fit_weights=SAVE_FULL_FIT_WEIGHTS, save_cv_fold_weights=SAVE_CV_FOLD_WEIGHTS), open(f'{OUT}/environment.json', 'w'), indent=1)
++print('Outputs ->', OUT)
+--- prereg_cell2
++++ A1_cell2
+@@ -7 +7,2 @@
+-def fit_predict(name, Xtr, ytr, Xte_list):
++DIAG = []   # per-fit diagnostics (does not affect training)
++def fit_predict(name, Xtr, ytr, Xte_list, tag='', save_dir=None):
+@@ -13,0 +15 @@
++    epoch_loss = []
+@@ -15 +17 @@
+-        rg.shuffle(idx)
++        rg.shuffle(idx); tot, nb_ = 0.0, 0
+@@ -19,0 +22,2 @@
++            tot += float(out.loss.detach()); nb_ += 1
++        epoch_loss.append(tot / max(nb_, 1))
+@@ -26,0 +31,14 @@
++    # ---- diagnostics after training (eval mode, no gradient; does not change any prediction above) ----
++    Ptr = []
++    for i in range(0, len(Xtr), 64):
++        e = tok(list(Xtr[i:i+64]), truncation=True, max_length=64, padding=True, return_tensors='pt').to(dev)
++        with torch.no_grad(): Ptr.append(m(**e).logits.argmax(-1).cpu().numpy() + 1)
++    train_acc = float((np.concatenate(Ptr) == np.asarray(ytr)).mean())
++    DIAG.append(dict(tag=tag, model=name, n_train=int(len(y)), epochs=E, steps=E * int(np.ceil(len(y) / 16)),
++                     epoch_loss=[round(v, 5) for v in epoch_loss], train_acc=train_acc))
++    if save_dir is not None:
++        os.makedirs(save_dir, exist_ok=True)
++        m.half().save_pretrained(save_dir, safe_serialization=True); tok.save_pretrained(save_dir)
++        json.dump(dict(base_model=name, num_labels=6, label_order="index k -> revised level k+1", max_len=64, batch=16, lr=2e-5,
++                       weight_decay=0.01, seed=70, scheduler="linear, no warmup", epochs=E, min_steps_rule=MIN_STEPS,
++                       n_train=int(len(y)), saved_dtype="float16 (training was float32)", tag=tag), open(f"{save_dir}/b_trust_training_config.json", "w"), indent=1)
+--- prereg_cell3
++++ A1_cell3
+@@ -11 +11,2 @@
+-        for a, b in StratifiedKFold(5, shuffle=True, random_state=65).split(X, y): p[b] = fit_predict(name, X[a], y[a], [X[b]])[0]
++        for fk, (a, b) in enumerate(StratifiedKFold(5, shuffle=True, random_state=65).split(X, y)):
++            p[b] = fit_predict(name, X[a], y[a], [X[b]], tag=f'{short}|{c}|cv{fk}', save_dir=(f'{OUT}/models/cv/{short}_{c}_fold{fk}' if SAVE_CV_FOLD_WEIGHTS else None))[0]
+@@ -21 +22 @@
+-        P = fit_predict(name, X, y, tests + [yq.text.to_numpy(), lk.text.to_numpy()])
++        P = fit_predict(name, X, y, tests + [yq.text.to_numpy(), lk.text.to_numpy()], tag=f'{short}|{c}|full', save_dir=(f'{OUT}/models/full/{short}_{c}' if SAVE_FULL_FIT_WEIGHTS else None))
+@@ -32,0 +34 @@
++        pd.DataFrame([dd for dd in DIAG if dd['tag'].startswith(f'{short}|{c}|')]).to_json(f"{OUT}/diag_{short}_{c}.jsonl", orient='records', lines=True)
+--- prereg_cell4
++++ A1_cell4
+@@ -13 +13,15 @@
+-import shutil; shutil.make_archive('/content/p76_outputs', 'zip', OUT); files.download('/content/p76_outputs.zip')
++# Overfitting diagnostics: train accuracy vs out-of-fold accuracy (CV folds) and full-fit train accuracy
++rows = []
++for short in ["distilbert", "roberta"]:
++    for c in corp:
++        dd = pd.read_json(f"{OUT}/diag_{short}_{c}.jsonl", lines=True); g = json.load(open(f"{OUT}/gate_{short}_{c}.json"))
++        cv = dd[dd.tag.str.contains('|cv', regex=False)]
++        rows.append(dict(model=short, corpus=c, epochs_cv=int(cv.epochs.iloc[0]), train_acc_cv_mean=cv.train_acc.mean(), oof_acc=g["cv_acc"],
++                         gap=cv.train_acc.mean() - g["cv_acc"], final_epoch_loss_cv_mean=float(np.mean([l[-1] for l in cv.epoch_loss])),
++                         train_acc_full=float(dd[dd.tag.str.endswith('|full')].train_acc.iloc[0]), T=g["T"]))
++O = pd.DataFrame(rows); O.to_csv(f"{OUT}/p76_overfitting.csv", index=False); display(O.round(3))
++# Results-only archive (no model weights) to send back; the weights stay on Google Drive
++import shutil
++res_dir = '/content/p76_results_only'; shutil.rmtree(res_dir, ignore_errors=True); shutil.copytree(OUT, res_dir, ignore=shutil.ignore_patterns('models', '*.zip'))
++shutil.make_archive('/content/p76_outputs', 'zip', res_dir); shutil.copy('/content/p76_outputs.zip', f'{OUT}/p76_outputs.zip')
++files.download('/content/p76_outputs.zip')

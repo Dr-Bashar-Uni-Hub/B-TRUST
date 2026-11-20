@@ -1,0 +1,6 @@
+{"tag":"distilbert|YAHYA|cv0","model":"distilbert-base-uncased","n_train":479,"epochs":10,"steps":300,"epoch_loss":[1.77186,1.5766,1.20418,0.81192,0.52675,0.36425,0.277,0.2194,0.18266,0.17142],"train_acc":0.993736952}
+{"tag":"distilbert|YAHYA|cv1","model":"distilbert-base-uncased","n_train":479,"epochs":10,"steps":300,"epoch_loss":[1.78353,1.61077,1.21992,0.82443,0.53525,0.3731,0.277,0.22126,0.19468,0.18007],"train_acc":0.9853862213}
+{"tag":"distilbert|YAHYA|cv2","model":"distilbert-base-uncased","n_train":479,"epochs":10,"steps":300,"epoch_loss":[1.76218,1.5608,1.15533,0.77411,0.51898,0.36577,0.27428,0.22241,0.19244,0.17503],"train_acc":0.9895615866}
+{"tag":"distilbert|YAHYA|cv3","model":"distilbert-base-uncased","n_train":479,"epochs":10,"steps":300,"epoch_loss":[1.7676,1.56662,1.18154,0.81039,0.55793,0.40124,0.30434,0.24195,0.20977,0.19384],"train_acc":0.987473904}
+{"tag":"distilbert|YAHYA|cv4","model":"distilbert-base-uncased","n_train":480,"epochs":10,"steps":300,"epoch_loss":[1.77145,1.57721,1.19452,0.80599,0.54156,0.36758,0.27324,0.22197,0.18475,0.16849],"train_acc":0.99375}
+{"tag":"distilbert|YAHYA|full","model":"distilbert-base-uncased","n_train":599,"epochs":8,"steps":304,"epoch_loss":[1.75461,1.45769,0.97746,0.61264,0.41137,0.30791,0.24791,0.22167],"train_acc":0.9833055092}

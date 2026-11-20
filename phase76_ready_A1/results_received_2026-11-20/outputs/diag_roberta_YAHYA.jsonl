@@ -1,0 +1,6 @@
+{"tag":"roberta|YAHYA|cv0","model":"roberta-base","n_train":479,"epochs":10,"steps":300,"epoch_loss":[1.79241,1.55911,0.85976,0.4758,0.29393,0.21041,0.14176,0.09587,0.08029,0.06538],"train_acc":0.9979123173}
+{"tag":"roberta|YAHYA|cv1","model":"roberta-base","n_train":479,"epochs":10,"steps":300,"epoch_loss":[1.79693,1.51733,0.79246,0.4356,0.2566,0.14003,0.09003,0.06823,0.05779,0.04785],"train_acc":1.0}
+{"tag":"roberta|YAHYA|cv2","model":"roberta-base","n_train":479,"epochs":10,"steps":300,"epoch_loss":[1.79572,1.57161,0.87005,0.44202,0.2448,0.12879,0.08306,0.06211,0.0484,0.04646],"train_acc":1.0}
+{"tag":"roberta|YAHYA|cv3","model":"roberta-base","n_train":479,"epochs":10,"steps":300,"epoch_loss":[1.78994,1.54125,0.89155,0.49965,0.27811,0.17504,0.10202,0.07288,0.05689,0.05314],"train_acc":1.0}
+{"tag":"roberta|YAHYA|cv4","model":"roberta-base","n_train":480,"epochs":10,"steps":300,"epoch_loss":[1.78431,1.49628,0.79423,0.39655,0.24383,0.1355,0.08081,0.06033,0.04875,0.04513],"train_acc":1.0}
+{"tag":"roberta|YAHYA|full","model":"roberta-base","n_train":599,"epochs":8,"steps":304,"epoch_loss":[1.7916,1.35995,0.65198,0.36512,0.23469,0.14291,0.10478,0.0784],"train_acc":0.9949916528}

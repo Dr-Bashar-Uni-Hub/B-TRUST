@@ -1,0 +1,8 @@
+{
+ "torch": "2.14.1+cu130",
+ "transformers": "4.46.3",
+ "python": "3.13.16",
+ "gpu": "Tesla T4",
+ "save_full_fit_weights": true,
+ "save_cv_fold_weights": false
+}

@@ -1,0 +1,5 @@
+{'EDUB': 42, 'YAHYA': 42, 'SANGO': 42, 'MOHOM': 42, 'GANI': 42, 'SCAR-I': 42, 'SCAR-E': 42, 'EDUQG': 28}
+skip (done) distilbert EDUB
+skip (done) distilbert YAHYA
+distilbert SANGO PASS 0.357 T 0.275 111s
+distilbert MOHOM CAUTION 0.238 T 0.259 97s

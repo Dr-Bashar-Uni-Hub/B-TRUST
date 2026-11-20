@@ -1,0 +1,6 @@
+{"tag":"distilbert|SCAR-I|cv0","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.04062,0.42584,0.32761],"train_acc":0.9333333333}
+{"tag":"distilbert|SCAR-I|cv1","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.05733,0.42684,0.32723],"train_acc":0.9279411765}
+{"tag":"distilbert|SCAR-I|cv2","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.06192,0.42071,0.31332],"train_acc":0.9362745098}
+{"tag":"distilbert|SCAR-I|cv3","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.05861,0.43248,0.32687],"train_acc":0.9284313725}
+{"tag":"distilbert|SCAR-I|cv4","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.06021,0.42774,0.32195],"train_acc":0.9289215686}
+{"tag":"distilbert|SCAR-I|full","model":"distilbert-base-uncased","n_train":2550,"epochs":3,"steps":480,"epoch_loss":[0.92739,0.37775,0.29432],"train_acc":0.9360784314}

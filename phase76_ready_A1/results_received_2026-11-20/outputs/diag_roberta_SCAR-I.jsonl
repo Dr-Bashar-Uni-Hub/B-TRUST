@@ -1,0 +1,6 @@
+{"tag":"roberta|SCAR-I|cv0","model":"roberta-base","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[0.94306,0.36129,0.28418],"train_acc":0.9348039216}
+{"tag":"roberta|SCAR-I|cv1","model":"roberta-base","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.0219,0.37184,0.27352],"train_acc":0.9416666667}
+{"tag":"roberta|SCAR-I|cv2","model":"roberta-base","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.02662,0.3885,0.28309],"train_acc":0.9333333333}
+{"tag":"roberta|SCAR-I|cv3","model":"roberta-base","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.00744,0.38516,0.28512],"train_acc":0.9362745098}
+{"tag":"roberta|SCAR-I|cv4","model":"roberta-base","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.04444,0.37664,0.26876],"train_acc":0.9411764706}
+{"tag":"roberta|SCAR-I|full","model":"roberta-base","n_train":2550,"epochs":3,"steps":480,"epoch_loss":[0.86913,0.35674,0.25844],"train_acc":0.9431372549}

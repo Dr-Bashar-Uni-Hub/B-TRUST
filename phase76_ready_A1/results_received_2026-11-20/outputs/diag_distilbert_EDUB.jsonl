@@ -1,0 +1,6 @@
+{"tag":"distilbert|EDUB|cv0","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.39701,1.05348,1.00753],"train_acc":0.4848039216}
+{"tag":"distilbert|EDUB|cv1","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.42439,1.06882,1.01831],"train_acc":0.4553921569}
+{"tag":"distilbert|EDUB|cv2","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.40755,1.05326,1.00448],"train_acc":0.4764705882}
+{"tag":"distilbert|EDUB|cv3","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.44667,1.06055,1.01124],"train_acc":0.4725490196}
+{"tag":"distilbert|EDUB|cv4","model":"distilbert-base-uncased","n_train":2040,"epochs":3,"steps":384,"epoch_loss":[1.43405,1.07081,1.01567],"train_acc":0.4754901961}
+{"tag":"distilbert|EDUB|full","model":"distilbert-base-uncased","n_train":2550,"epochs":3,"steps":480,"epoch_loss":[1.3486,1.02931,0.99621],"train_acc":0.4654901961}

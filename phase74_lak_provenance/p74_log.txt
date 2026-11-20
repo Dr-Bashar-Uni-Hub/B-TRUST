@@ -1,0 +1,7 @@
+label counts per annotator: {'A1': 43, 'A2': 46, 'groundtruth': 43} | multi-label: {'A1': 2, 'A2': 5, 'groundtruth': 2}
+A1 vs groundtruth: set-overlap agreement 0.800
+A2 vs groundtruth: set-overlap agreement 0.875
+A1 vs A2 exact-set agreement 0.600; kappa (first label) 0.580
+kappa A1 vs groundtruth (first label): 0.730
+kappa A2 vs groundtruth (first label): 0.789
+our LAK40 IDs == groundtruth IDs: True
