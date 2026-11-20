@@ -1,0 +1,9 @@
+loss,baseline,bootstrap,diff,ci_lo,ci_hi,supported,note
+prereg: irrelevant vote = loss,best constant (2),video-cluster,-0.14761904761904765,-0.23245614035087717,-0.06481481481481481,True,
+prereg: irrelevant vote = loss,best constant (2),item,-0.14761904761904765,-0.2333333333333333,-0.06666666666666665,True,
+Bloom votes only,best constant (2),video-cluster,-0.1642857142857143,-0.26712328767123283,-0.05714285714285714,True,
+Bloom votes only,best constant (2),item,-0.1642857142857143,-0.26904761904761904,-0.061904761904761886,True,
+consolidated-label error,constant comprehension,video-cluster,-0.11428571428571428,-0.25,0.02857142857142857,False,acc 34/70 vs 26/70; McNemar b=17 c=9 exact p=0.1686
+prereg,const 2,video-cluster seed 1,-0.14761904761904765,-0.2324586903304774,-0.062222222222222213,True,
+prereg,const 2,video-cluster seed 2,-0.14761904761904765,-0.2311111111111111,-0.06371965452847812,True,
+prereg,const 2,video-cluster seed 3,-0.14761904761904765,-0.23039215686274508,-0.06305653479566532,True,

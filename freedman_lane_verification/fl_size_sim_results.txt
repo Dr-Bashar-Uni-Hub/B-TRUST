@@ -1,0 +1,13 @@
+alpha 0.05 one-sided; Monte Carlo SE ~0.004
+rho(x,Z1)=0.00 cov=1 beta_Z=0.0: FL 0.051 | original 0.072
+rho(x,Z1)=0.00 cov=1 beta_Z=1.5: FL 0.050 | original 0.066
+rho(x,Z1)=0.00 cov=2 beta_Z=0.0: FL 0.050 | original 0.093
+rho(x,Z1)=0.00 cov=2 beta_Z=1.5: FL 0.045 | original 0.087
+rho(x,Z1)=0.65 cov=1 beta_Z=0.0: FL 0.046 | original 0.068
+rho(x,Z1)=0.65 cov=1 beta_Z=1.5: FL 0.075 | original 0.096
+rho(x,Z1)=0.65 cov=2 beta_Z=0.0: FL 0.045 | original 0.085
+rho(x,Z1)=0.65 cov=2 beta_Z=1.5: FL 0.074 | original 0.129
+rho(x,Z1)=0.93 cov=1 beta_Z=0.0: FL 0.052 | original 0.070
+rho(x,Z1)=0.93 cov=1 beta_Z=1.5: FL 0.101 | original 0.128
+rho(x,Z1)=0.93 cov=2 beta_Z=0.0: FL 0.053 | original 0.093
+rho(x,Z1)=0.93 cov=2 beta_Z=1.5: FL 0.100 | original 0.162

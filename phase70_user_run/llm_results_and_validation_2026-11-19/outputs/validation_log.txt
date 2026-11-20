@@ -1,0 +1,82 @@
+rows per dataset: {'EDUQG': 903, 'DASQ': 500, 'SCAR-E': 500, 'YLQ70': 70, 'LAK40': 40}
+dataset   n  valid  abst  coverage  acc_overall  acc_conditional  reported_acc  reported_cov  reported_abst  stored_correct_matches
+   DASQ 500    499     1     0.998       0.6980           0.6994        0.6980         0.998              1                    True
+ SCAR-E 500    500     0     1.000       0.8060           0.8060        0.8060         1.000              0                    True
+  EDUQG 903    903     0     1.000       0.6899           0.6899        0.6899         1.000              0                    True
+  YLQ70  70     70     0     1.000       0.4857           0.4857        0.4857         1.000              0                    True
+  LAK40  40     40     0     1.000       0.7250           0.7250        0.7250         1.000              0                    True
+reported acc equals overall (abstention counted wrong): True
+abstentions in detailed: 1  in abstentions file: 1  match on hash: True
+hash = sha256(question)?  0.0
+unique question hashes: 2000 of 2013 | reported cached predictions + abstentions: 2000
+duplicated questions across rows: 21
+dataset  item_index  prediction  reference_label
+  EDUQG         209         1.0              1.0
+  EDUQG         762         1.0              1.0
+  EDUQG         839         1.0              1.0
+  EDUQG         853         1.0              1.0
+  EDUQG         825         2.0              1.0
+  EDUQG          99         2.0              1.0
+  EDUQG         729         2.0              1.0
+  EDUQG         659         1.0              1.0
+  EDUQG         586         1.0              1.0
+  EDUQG         760         1.0              1.0
+  EDUQG         384         1.0              1.0
+  EDUQG         827         1.0              2.0
+DASQ: item text matches notebook sampling 1.0000; labels match 1.0; item_index == position False
+SCAR-E: item text matches notebook sampling 1.0000; labels match 1.0; item_index == position False
+EDUQG: item text matches notebook sampling 1.0000; labels match 1.0; item_index == position True
+YLQ70: item text matches notebook sampling 1.0000; labels match 1.0; item_index == position True
+LAK40: item text matches notebook sampling 1.0000; labels match True; item_index == position True
+vote matrix: NaN (irrelevant/missing) votes per item: [31, 35, 4] | total NaN votes 43
+H10 reproduced: LLM 0.590476 (reported 0.590476); const 0.738095 (reported 0.738095); diff -0.147619 CI [-0.232456,-0.064815] (reported [-0.232456,-0.064815])
+constants under prereg (irrelevant vote = loss): {1: np.float64(0.8143), 2: np.float64(0.7381), 3: np.float64(0.9286), 4: np.float64(0.7857), 5: np.float64(0.9429), 6: np.float64(0.9952)} -> best 2
+constants under Bloom votes only: {1: np.float64(0.719), 2: np.float64(0.6786), 3: np.float64(0.9095), 4: np.float64(0.7595), 5: np.float64(0.9381), 6: np.float64(0.9952)} -> best 2
+                          loss               baseline            bootstrap    diff   ci_lo   ci_hi  supported                                                note
+prereg: irrelevant vote = loss      best constant (2)        video-cluster -0.1476 -0.2325 -0.0648       True                                                 NaN
+prereg: irrelevant vote = loss      best constant (2)                 item -0.1476 -0.2333 -0.0667       True                                                 NaN
+              Bloom votes only      best constant (2)        video-cluster -0.1643 -0.2671 -0.0571       True                                                 NaN
+              Bloom votes only      best constant (2)                 item -0.1643 -0.2690 -0.0619       True                                                 NaN
+      consolidated-label error constant comprehension        video-cluster -0.1143 -0.2500  0.0286      False acc 34/70 vs 26/70; McNemar b=17 c=9 exact p=0.1686
+                        prereg                const 2 video-cluster seed 1 -0.1476 -0.2325 -0.0622       True                                                 NaN
+                        prereg                const 2 video-cluster seed 2 -0.1476 -0.2311 -0.0637       True                                                 NaN
+                        prereg                const 2 video-cluster seed 3 -0.1476 -0.2304 -0.0631       True                                                 NaN
+EXPLORATORY LLM minus human leave-one-out (G6): 0.5905 vs 0.6857; diff -0.0952 CI [-0.1646,-0.0149]
+EXPLORATORY G3: LLM 0.4857 vs best constant 0.5524; diff -0.0667 CI [-0.1538,+0.0145]
+EXPLORATORY G2: LLM 0.4048 vs best constant 0.4810; diff -0.0762 CI [-0.1616,+0.0000]
+non-Bloom raw votes on the 70 items: {'irrelevant': 43}
+Claude: vote loss 0.5905, accuracy 0.4857
+                 comparator  comp_voteloss  comp_acc  claude_minus_comp   ci_lo   ci_hi  mcnemar_b  mcnemar_c  mcnemar_p  mcnemar_p_holm
+         Frozen EduBloom LR         0.7524    0.3286            -0.1619 -0.2429 -0.0784         19          8     0.0522          0.2090
+     Constant comprehension         0.7381    0.3714            -0.1476 -0.2325 -0.0648         17          9     0.1686          0.5059
+ Frozen EduBloom DistilBERT         0.7476    0.3714            -0.1571 -0.2533 -0.0635         22         14     0.2430          0.5059
+DASQBT TF-IDF LR (Phase 60)         0.7238    0.3714            -0.1333 -0.2207 -0.0435         17          9     0.1686          0.5059
+     model  train  YLQ70_correct  LAK40_correct  DASQ  SCAR_E  EDUQG
+distilbert   EDUB             25             10 0.381   0.339  0.317
+distilbert   DASQ             24             28   NaN   0.725  0.560
+distilbert SCAR-I             31             25 0.512     NaN  0.638
+distilbert SCAR-E             29             21 0.579     NaN  0.694
+distilbert  EDUQG             19              7 0.139   0.119    NaN
+   roberta   EDUB             25             11 0.356   0.339  0.326
+   roberta   DASQ             26             29   NaN   0.745  0.515
+   roberta SCAR-I             28             24 0.553     NaN  0.549
+   roberta SCAR-E             33             22 0.621     NaN  0.664
+   roberta  EDUQG             18              9 0.163   0.119    NaN
+Claude: YLQ70 34/70, LAK40 29/40, DASQ 0.698 (500-sample), SCAR-E 0.806 (500-sample), EDUQG 0.690 (all 903)
+Bonferroni (4 comparisons) 98.75% CI, Claude minus Frozen EduBloom LR: [-0.2657,-0.0547] excludes 0: True
+Bonferroni (4 comparisons) 98.75% CI, Claude minus Frozen EduBloom DistilBERT: [-0.2770,-0.0354] excludes 0: True
+Bonferroni (4 comparisons) 98.75% CI, Claude minus Constant comprehension: [-0.2548,-0.0392] excludes 0: True
+Bonferroni (4 comparisons) 98.75% CI, Claude minus DASQBT TF-IDF LR: [-0.2443,-0.0193] excludes 0: True
+LAK40: accuracy 0.725; reference sets are multi-label, majority baseline per Phase 68 convention 8/40 = 0.20
+dataset   n  accuracy  majority_class  majority_rate   skill   ci_lo   ci_hi                                               pred_dist                                                ref_dist
+   DASQ 500    0.6980               2         0.3920  0.3060  0.2420  0.3680 {1.0: 88, 2.0: 146, 3.0: 69, 4.0: 79, 5.0: 63, 6.0: 54} {1.0: 73, 2.0: 196, 3.0: 61, 4.0: 62, 5.0: 63, 6.0: 45}
+ SCAR-E 500    0.8060               2         0.2220  0.5840  0.5280  0.6360 {1.0: 65, 2.0: 90, 3.0: 107, 4.0: 80, 5.0: 91, 6.0: 67} {1.0: 64, 2.0: 111, 3.0: 93, 4.0: 83, 5.0: 90, 6.0: 59}
+  EDUQG 903    0.6899               1         0.7309 -0.0410 -0.0631 -0.0188           {1.0: 740, 2.0: 80, 3.0: 52, 4.0: 22, 5.0: 9}                 {1.0: 660, 2.0: 114, 3.0: 110, 4.0: 19}
+  YLQ70  70    0.4857               2         0.3714  0.1143 -0.0286  0.2500              {1.0: 6, 2.0: 30, 3.0: 9, 4.0: 18, 5.0: 7}             {1.0: 19, 2.0: 26, 3.0: 4, 4.0: 15, 5.0: 6}
+EDUQG confusion (rows reference, cols prediction):
+prediction       1.0  2.0  3.0  4.0  5.0
+reference_label                         
+1.0              588   38   18   11    5
+2.0               88   13    9    2    2
+3.0               57   25   20    7    1
+4.0                7    4    5    2    1

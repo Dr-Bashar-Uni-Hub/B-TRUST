@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1180" viewBox="0 0 1600 1180">
+<defs><marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#000"/></marker></defs>
+<rect x="0" y="0" width="1600" height="1180" fill="#FFFFFF"/>
+<rect x="20" y="20" width="1560" height="170" rx="10" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.2"/>
+<text x="40" y="48" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" fill="#000">1  Input: corpora and data preparation</text>
+<rect x="45" y="70" width="340" height="100" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="215.0" y="104.7" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="bold" fill="#000">Labelled corpora</text>
+<text x="215.0" y="125.95" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">Questions and learning objectives</text>
+<text x="215.0" y="147.2" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">(training corpora and targets)</text>
+<rect x="430" y="70" width="340" height="100" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="600.0" y="104.7" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="bold" fill="#000">Provenance and label source</text>
+<text x="600.0" y="125.95" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">Generator, publisher, single expert,</text>
+<text x="600.0" y="147.2" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">expert consensus; licence</text>
+<rect x="815" y="70" width="340" height="100" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="985.0" y="104.7" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="bold" fill="#000">Taxonomy harmonisation</text>
+<text x="985.0" y="125.95" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">Original ↔ revised Bloom by name</text>
+<text x="985.0" y="147.2" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">(provisional alignment)</text>
+<rect x="1200" y="70" width="330" height="100" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="1365.0" y="104.7" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="bold" fill="#000">Duplicate and overlap checks</text>
+<text x="1365.0" y="125.95" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">Within-corpus duplicates; cross-corpus</text>
+<text x="1365.0" y="147.2" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">overlap; test-set leakage rule</text>
+<rect x="20" y="210" width="1560" height="470" rx="10" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.2"/>
+<text x="40" y="238" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" fill="#000">2  Validity assessment: gates grouped by the evidence each one requires</text>
+<text x="190.0" y="270" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#000">Corpus labels only</text>
+<text x="190.0" y="288" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">no model</text>
+<text x="495.0" y="270" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#000">Corpus + cross-validated model</text>
+<text x="495.0" y="288" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">model-relative</text>
+<text x="800.0" y="270" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#000">Independent expert labels</text>
+<text x="800.0" y="288" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">on a sample</text>
+<text x="1105.0" y="270" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#000">Target-population human labels</text>
+<text x="1105.0" y="288" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">≥ 2 annotators + model</text>
+<text x="1410.0" y="270" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" fill="#000">Calibration data + model</text>
+<text x="1410.0" y="288" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">power analysis first</text>
+<rect x="45" y="300" width="290" height="205" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="190.0" y="387.2" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="bold" fill="#000">G0b  Level coverage</text>
+<text x="190.0" y="408.45" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">≥ 30 items at each of</text>
+<text x="190.0" y="429.7" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">the six levels</text>
+<text x="327" y="316" text-anchor="end" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="12" font-style="italic" fill="#333">corpus-level</text>
+<rect x="350" y="300" width="290" height="205" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="495.0" y="376.575" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="bold" fill="#000">G0  Label recoverability</text>
+<text x="495.0" y="397.825" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">CV accuracy minus max(majority,</text>
+<text x="495.0" y="419.075" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">metadata-only); κ_CV</text>
+<text x="495.0" y="440.325" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">+ collapse check (top-class share)</text>
+<text x="632" y="316" text-anchor="end" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="12" font-style="italic" fill="#333">corpus-level</text>
+<rect x="655" y="300" width="290" height="205" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="800.0" y="387.2" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="bold" fill="#000">G1  Provenance agreement</text>
+<text x="800.0" y="408.45" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">κ(label source, expert) ÷</text>
+<text x="800.0" y="429.7" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">κ(expert, expert)</text>
+<text x="937" y="316" text-anchor="end" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="12" font-style="italic" fill="#333">corpus-level</text>
+<rect x="960" y="300" width="290" height="95" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="1105.0" y="333.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">G3  Human disagreement</text>
+<text x="1105.0" y="353.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">Leave-one-annotator-out</text>
+<text x="1105.0" y="373.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">vote loss at 6 / 3 / 2 levels</text>
+<text x="1242" y="316" text-anchor="end" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="12" font-style="italic" fill="#333">target-level</text>
+<rect x="960" y="410" width="290" height="95" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="1105.0" y="443.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">G2  Target-population skill</text>
+<text x="1105.0" y="463.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">Vote loss and accuracy vs</text>
+<text x="1105.0" y="483.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">best constant (fixed a priori)</text>
+<text x="1242" y="426" text-anchor="end" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="12" font-style="italic" fill="#333">target-level</text>
+<rect x="1265" y="300" width="290" height="205" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="1410.0" y="376.575" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="17" font-weight="bold" fill="#000">G4  Decision readiness</text>
+<text x="1410.0" y="397.825" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">Certification feasibility:</text>
+<text x="1410.0" y="419.075" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">power plan, then video-level</text>
+<text x="1410.0" y="440.325" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="15" font-weight="normal" fill="#000">Learn-then-Test</text>
+<text x="1547" y="316" text-anchor="end" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="12" font-style="italic" fill="#333">target-level</text>
+<line x1="1105.0" y1="395" x2="1105.0" y2="410" stroke="#000" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="1167.0" y="406" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="12" font-style="italic" fill="#000">ceiling</text>
+<line x1="1250" y1="457" x2="1265" y2="457" stroke="#000" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="45" y="545" width="900" height="125" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6" stroke-dasharray="7,5"/>
+<text x="495.0" y="583.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Gate FAIL or CAUTION → investigate; not by itself proof of invalid labels</text>
+<text x="495.0" y="603.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">Check: training collapse and corpus size · class imbalance · metadata or template leakage</text>
+<text x="495.0" y="623.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">· provenance and generation process · taxonomy alignment · threshold sensitivity</text>
+<text x="495.0" y="643.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">If unresolved: restrict use, revise the corpus, or collect new labels</text>
+<path d="M190.0,505 L190.0,545" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="2,4" marker-end="url(#arr)"/>
+<path d="M495.0,505 L495.0,545" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="2,4" marker-end="url(#arr)"/>
+<path d="M800.0,505 L800.0,545" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="2,4" marker-end="url(#arr)"/>
+<path d="M1030,505 L1030,590 L946,590" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="2,4" marker-end="url(#arr)"/>
+<path d="M1325,505 L1325,630 L946,630" fill="none" stroke="#000" stroke-width="1.3" stroke-dasharray="2,4" marker-end="url(#arr)"/>
+<line x1="190.0" y1="190" x2="190.0" y2="258" stroke="#000" stroke-width="1.6" marker-end="url(#arr)"/>
+<line x1="495.0" y1="190" x2="495.0" y2="258" stroke="#000" stroke-width="1.6" marker-end="url(#arr)"/>
+<line x1="800.0" y1="190" x2="800.0" y2="258" stroke="#000" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="20" y="700" width="1560" height="200" rx="10" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.2"/>
+<text x="40" y="728" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" fill="#000">3  Evaluation: model classes and targets</text>
+<rect x="45" y="765" width="250" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="170.0" y="808.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">TF-IDF logistic</text>
+<text x="170.0" y="828.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">regression</text>
+<text x="170.0" y="848.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">(word 1–2-grams)</text>
+<rect x="310" y="765" width="250" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="435.0" y="808.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Word-embedding</text>
+<text x="435.0" y="828.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">logistic regression</text>
+<text x="435.0" y="848.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">(spaCy mean vectors)</text>
+<rect x="575" y="765" width="250" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="700.0" y="808.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Fine-tuned</text>
+<text x="700.0" y="828.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">DistilBERT, RoBERTa</text>
+<text x="700.0" y="848.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">(fixed settings)</text>
+<rect x="840" y="765" width="230" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6" stroke-dasharray="5,4"/>
+<text x="955.0" y="808.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Zero-shot LLM</text>
+<text x="955.0" y="828.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">no training corpus;</text>
+<text x="955.0" y="848.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">target-level only</text>
+<rect x="1085" y="765" width="225" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="1197.5" y="808.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Cross-dataset</text>
+<text x="1197.5" y="828.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">transfer</text>
+<text x="1197.5" y="848.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">(leakage rule)</text>
+<rect x="1325" y="765" width="230" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="1440.0" y="808.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Held-out human-</text>
+<text x="1440.0" y="828.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">judged targets</text>
+<text x="1440.0" y="848.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">YouLeQD 70; LAK40</text>
+<line x1="170" y1="752" x2="700" y2="752" stroke="#000" stroke-width="1.4" stroke-dasharray="8,5"/>
+<line x1="170" y1="752" x2="170" y2="765" stroke="#000" stroke-width="1.4" stroke-dasharray="8,5"/>
+<line x1="435" y1="752" x2="435" y2="765" stroke="#000" stroke-width="1.4" stroke-dasharray="8,5"/>
+<line x1="700" y1="752" x2="700" y2="765" stroke="#000" stroke-width="1.4" stroke-dasharray="8,5"/>
+<path d="M435,752 C435,700 495,690 495,505" fill="none" stroke="#000" stroke-width="1.4" stroke-dasharray="8,5" marker-end="url(#arr)"/>
+<text x="500" y="742" text-anchor="start" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">trained classes compute G0</text>
+<line x1="955" y1="745" x2="955" y2="765" stroke="#000" stroke-width="1.4"/>
+<path d="M955,745 L1020,745 L1020,505" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#arr)"/>
+<text x="1026" y="735" text-anchor="start" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">predictions (all model classes)</text>
+<path d="M1440,765 L1440,725 L1180,725 L1180,505" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#arr)"/>
+<path d="M1500,765 L1500,505" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#arr)"/>
+<text x="1310" y="718" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">target labels</text>
+<rect x="20" y="920" width="1560" height="240" rx="10" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.2"/>
+<text x="40" y="948" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" fill="#000">4  Outputs</text>
+<rect x="45" y="975" width="290" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="190.0" y="1018.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Validity evidence</text>
+<text x="190.0" y="1038.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">and detected</text>
+<text x="190.0" y="1058.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">failure modes</text>
+<rect x="350" y="975" width="290" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="495.0" y="1018.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Cross-dataset</text>
+<text x="495.0" y="1038.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">generalisation</text>
+<text x="495.0" y="1058.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">(transfer T)</text>
+<rect x="655" y="975" width="290" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="800.0" y="1018.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Uncertainty and</text>
+<text x="800.0" y="1038.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">annotator</text>
+<text x="800.0" y="1058.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">disagreement</text>
+<rect x="960" y="975" width="290" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="1105.0" y="1018.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Decision-readiness</text>
+<text x="1105.0" y="1038.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">assessment</text>
+<text x="1105.0" y="1058.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">(certifiable or not)</text>
+<rect x="1265" y="975" width="290" height="115" rx="6" fill="#FFFFFF" stroke="#000000" stroke-width="1.6"/>
+<text x="1410.0" y="1018.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="16" font-weight="bold" fill="#000">Recommendation</text>
+<text x="1410.0" y="1038.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">further validation, restricted</text>
+<text x="1410.0" y="1058.1" text-anchor="middle" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="14" font-weight="normal" fill="#000">use, or new annotation</text>
+<line x1="335" y1="1032.5" x2="350" y2="1032.5" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<line x1="640" y1="1032.5" x2="655" y2="1032.5" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<line x1="945" y1="1032.5" x2="960" y2="1032.5" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<line x1="1250" y1="1032.5" x2="1265" y2="1032.5" stroke="#000" stroke-width="1.3" marker-end="url(#arr)"/>
+<path d="M1197,880 L1197,905 L495,905 L495,975" fill="none" stroke="#000" stroke-width="1.4" marker-end="url(#arr)"/>
+<line x1="800" y1="912" x2="800" y2="973" stroke="#000" stroke-width="1.6" marker-end="url(#arr)"/>
+<line x1="45" y1="1118" x2="95" y2="1118" stroke="#000" stroke-width="1.6"/>
+<text x="105" y="1123" text-anchor="start" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#000">data or evidence flow</text>
+<line x1="300" y1="1118" x2="350" y2="1118" stroke="#000" stroke-width="1.4" stroke-dasharray="8,5"/>
+<text x="360" y="1123" text-anchor="start" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#000">model class used to compute a gate</text>
+<line x1="620" y1="1118" x2="670" y2="1118" stroke="#000" stroke-width="1.3" stroke-dasharray="2,4"/>
+<text x="680" y="1123" text-anchor="start" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" fill="#000">FAIL / CAUTION routed to investigation</text>
+<text x="1555" y="1123" text-anchor="end" font-family="Arial, 'Liberation Sans', 'DejaVu Sans', sans-serif" font-size="13" font-style="italic" fill="#000">corpus-level gates: G0b, G0, G1 · target-level gates: G2, G3, G4</text>
+</svg>

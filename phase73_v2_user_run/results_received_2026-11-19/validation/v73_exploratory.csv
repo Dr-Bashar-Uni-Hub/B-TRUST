@@ -1,0 +1,7 @@
+model,test,rho,exact_p
+distilbert,"exclude collapsed SANGO, MOHOM (k=6)",0.942857142857143,0.008333333333333333
+distilbert,TF-IDF G0 (reference model) vs transformer T (k=8),0.6190476190476191,0.05749007936507936
+distilbert,"G0 decisions equal to TF-IDF: 5/8 {'SANGO': ('PASS', 'FAIL'), 'MOHOM': ('PASS', 'FAIL'), 'GANI': ('CAUTION', 'PASS')}",,
+roberta,"exclude collapsed SANGO, MOHOM (k=6)",0.942857142857143,0.008333333333333333
+roberta,TF-IDF G0 (reference model) vs transformer T (k=8),0.6190476190476191,0.05749007936507936
+roberta,"G0 decisions equal to TF-IDF: 5/8 {'SANGO': ('PASS', 'FAIL'), 'MOHOM': ('PASS', 'FAIL'), 'GANI': ('CAUTION', 'PASS')}",,

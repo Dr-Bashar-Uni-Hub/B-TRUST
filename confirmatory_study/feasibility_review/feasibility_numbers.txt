@@ -1,0 +1,14 @@
+Phase 70 inputs: vote-loss paired SD 0.366, effect -0.148; McNemar 17 vs 9 of 70 (d 0.114, psi 0.371).
+Shrunken scenarios: C1 at half the effect; C2 with d reduced 25% and psi UNCHANGED (conservative).
+
+design                                        C1 obs  C1 half  C2 obs  C2 -25%
+A  protocol v1: C1-C3, Holm alpha/3, n=650      1.00     1.00    0.99     0.89
+B  C1+C2, Holm alpha/2, n=450                   1.00     0.98    0.96     0.77
+C  C1+C2, Holm alpha/2, n=400                   1.00     0.96    0.94     0.72
+D  single primary C2, n=380                     1.00     0.98    0.96     0.79
+E  single primary C1, n=250                     1.00     0.89    0.85     0.61
+  A: relevant 650, screened ~2787, Stage1 15 h, Stage2 22 h (4 coders), training 18 h, recode 2.2 h -> ~57 person-hours
+  B: relevant 450, screened ~1929, Stage1 11 h, Stage2 11 h (3 coders), training 15 h, recode 1.1 h -> ~38 person-hours
+  C: relevant 400, screened ~1715, Stage1 10 h, Stage2 10 h (3 coders), training 15 h, recode 1.0 h -> ~36 person-hours
+  D: relevant 380, screened ~1629, Stage1 9 h, Stage2 10 h (3 coders), training 15 h, recode 0.9 h -> ~34 person-hours
+  E: relevant 250, screened ~1072, Stage1 6 h, Stage2 6 h (3 coders), training 15 h, recode 0.6 h -> ~28 person-hours
