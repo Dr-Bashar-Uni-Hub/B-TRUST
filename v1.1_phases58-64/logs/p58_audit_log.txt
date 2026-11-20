@@ -1,0 +1,18 @@
+[2.1] LR reproduces YouLeQD preds: 1.0  internal preds: 1.0
+[2.1] internal acc LR/DB: 0.482 0.5086666666666667
+[2.2] internal test class counts: {'L1': 250, 'L2': 250, 'L3': 250, 'L4': 250, 'L5': 250, 'L6': 250}
+[2.2] difficulty x level:
+ bloom_level     L1     L2    L3    L4    L5    L6
+difficulty                                       
+Easy         12279  12563     0     0     0     0
+Hard             0      0     0  6371  6355  6492
+Medium           0   9787  9927  9938     0     0
+[2.2] templates: 10753  with >1 label: 0.9285
+[2.2] metadata-only (difficulty) accuracy on internal test: 0.5
+[2.2] DistilBERT internal prediction counts: {'L1': 392, 'L2': 3, 'L3': 502, 'L5': 457, 'L6': 146}
+[2.3] lr_prediction relevant70 acc=0.3286 kappa=0.0964
+[2.3] distilbert_prediction relevant70 acc=0.3714 kappa=0.1067
+[2.3] majority 'comprehension': 0.3714
+[2.4] lr_prediction: P(disagree>=1 annotator|relevant)=0.9286  items all-3-agree=5
+[2.4] distilbert_prediction: P(disagree>=1 annotator|relevant)=0.9571  items all-3-agree=3
+[2.5] human LOO G6 vote loss, relevant: 0.6857

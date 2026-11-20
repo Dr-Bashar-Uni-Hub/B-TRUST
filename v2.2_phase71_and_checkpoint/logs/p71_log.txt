@@ -1,0 +1,34 @@
+{'EDUB': 2550, 'YAHYA': 599, 'SANGO': 413, 'MOHOM': 126, 'GANI': 1185, 'SCAR-I': 2550, 'SCAR-E': 1839, 'EDUQG': 903}
+model  train    n  cv_acc  G0_lift  kappa_cv      G0  levels_ge30      T  T_skill
+tfidf   EDUB 2550  0.3961   0.0004    0.2329    FAIL            6 0.2929  -0.0576
+tfidf  YAHYA  599  0.7546   0.5876    0.7055    PASS            6 0.5039   0.1271
+tfidf  SANGO  413  0.5593   0.2373    0.4035    PASS            6 0.3612   0.0066
+tfidf  MOHOM  126  0.6349   0.4048    0.5485    PASS            0 0.3363  -0.0314
+tfidf   GANI 1185  0.6886   0.1300    0.3850 CAUTION            6 0.2712  -0.0496
+tfidf SCAR-I 2550  0.8753   0.7086    0.8504    PASS            6 0.4611   0.0925
+tfidf SCAR-E 1839  0.8015   0.5775    0.7584    PASS            6 0.4214   0.0528
+tfidf  EDUQG  903  0.7309   0.0000    0.0220    FAIL            3 0.1718  -0.1244
+{'model': 'tfidf', 'rho_T': np.float64(0.9285714285714287), 'p_T': np.float64(0.0011160714285714285), 'supported': np.True_, 'rho_Tskill': np.float64(0.9523809523809524), 'p_Tskill': np.float64(0.000570436507936508), 'rho_k7': np.float64(0.9285714285714288), 'p_k7': np.float64(0.003373015873015873), 'any_beats_YLQ_majority': False}
+model  train    n  cv_acc  G0_lift  kappa_cv      G0  levels_ge30      T  T_skill
+  emb   EDUB 2550  0.3953  -0.0004    0.2467    FAIL            6 0.2597  -0.0908
+  emb  YAHYA  599  0.5693   0.4023    0.4831    PASS            6 0.3629  -0.0139
+  emb  SANGO  413  0.5036   0.1816    0.3773 CAUTION            6 0.3319  -0.0227
+  emb  MOHOM  126  0.6270   0.3968    0.5481    PASS            0 0.2667  -0.1010
+  emb   GANI 1185  0.6650   0.1063    0.4728 CAUTION            6 0.3248   0.0040
+  emb SCAR-I 2550  0.7580   0.5914    0.7096    PASS            6 0.3489  -0.0196
+  emb SCAR-E 1839  0.7129   0.4889    0.6514    PASS            6 0.3227  -0.0459
+  emb  EDUQG  903  0.6478  -0.0831    0.1999    FAIL            3 0.1794  -0.1167
+{'model': 'emb', 'rho_T': np.float64(0.6904761904761906), 'p_T': np.float64(0.03469742063492064), 'supported': np.True_, 'rho_Tskill': np.float64(0.4047619047619048), 'p_Tskill': np.float64(0.16341765873015873), 'rho_k7': np.float64(0.6071428571428572), 'p_k7': np.float64(0.08333333333333333), 'any_beats_YLQ_majority': False}
+model       emb    tfidf   same
+train                          
+EDUB       FAIL     FAIL   True
+EDUQG      FAIL     FAIL   True
+GANI    CAUTION  CAUTION   True
+MOHOM      PASS     PASS   True
+SANGO   CAUTION     PASS  False
+SCAR-E     PASS     PASS   True
+SCAR-I     PASS     PASS   True
+YAHYA      PASS     PASS   True
+model  rho_T    p_T  supported  rho_Tskill  p_Tskill  rho_k7   p_k7  any_beats_YLQ_majority
+tfidf 0.9286 0.0011       True      0.9524    0.0006  0.9286 0.0034                   False
+  emb 0.6905 0.0347       True      0.4048    0.1634  0.6071 0.0833                   False

@@ -1,0 +1,6 @@
+model,correct,n,acc
+DAS_LR,13,40,0.325
+Frozen_EduBloom_LR,6,40,0.15
+Frozen_DistilBERT,10,40,0.25
+McNemar DAS_LR vs Frozen_EduBloom_LR,7,7,0.015625
+McNemar DAS_LR vs Frozen_DistilBERT,8,13,0.5810546875

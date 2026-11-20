@@ -1,0 +1,9 @@
+             dataset    n                             predictor    acc  ci_lo  ci_hi  majority  lift_over_majority  kappa
+              DASQBT 2329                         text_LR_5fold 0.7059 0.6874 0.7248    0.3929              0.3130 0.5871
+              DASQBT 2329                     first_word_lookup 0.6664 0.6471 0.6853    0.3929              0.2735 0.5520
+EduBloom_sizematched 2329                         text_LR_5fold 0.4062 0.3860 0.4264    0.3152              0.0910 0.2271
+EduBloom_sizematched 2329                     first_word_lookup 0.3564 0.3366 0.3757    0.3152              0.0412 0.1076
+EduBloom_sizematched 2329 metadata_only_lookup(difficulty+type) 0.4010 0.3813 0.4212    0.3152              0.0859 0.2118
+
+DASQBT duplicated texts: 174; with conflicting labels: 0
+EduBloom templates (topic removed): 10753; with >1 label: 0.928 of templates

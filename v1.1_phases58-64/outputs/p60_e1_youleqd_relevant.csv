@@ -1,0 +1,9 @@
+model,n,vote_loss,consolidated_acc,kappa,balanced_acc,perm_p_vs_independence,pred_distribution
+DAS_LR,70,0.7238095238095238,0.37142857142857144,0.14563106796116476,0.35282051282051274,0.0034,"{""comprehension"": 45, ""application"": 11, ""evaluation"": 6, ""synthesis"": 5, ""analysis"": 3}"
+A1_char,70,0.6761904761904762,0.4142857142857143,0.1954022988505748,0.31645074224021597,0.001,"{""comprehension"": 42, ""application"": 11, ""evaluation"": 7, ""knowledge"": 5, ""analysis"": 4, ""synthesis"": 1}"
+A2_aug,70,0.738095238095238,0.3,0.08776595744680837,0.28874493927125505,0.071,"{""comprehension"": 35, ""application"": 18, ""synthesis"": 6, ""knowledge"": 5, ""evaluation"": 3, ""analysis"": 3}"
+A3_balanced,70,0.8238095238095239,0.22857142857142856,0.13639479095270735,0.3441295546558704,0.0006,"{""evaluation"": 21, ""synthesis"": 17, ""application"": 15, ""analysis"": 7, ""comprehension"": 6, ""knowledge"": 4}"
+Frozen_EduBloom_LR,70,0.7523809523809524,0.32857142857142857,0.0964020873386432,0.318272604588394,0.0792,"{""comprehension"": 32, ""analysis"": 15, ""knowledge"": 8, ""application"": 8, ""synthesis"": 4, ""evaluation"": 3}"
+Frozen_DistilBERT,70,0.7476190476190476,0.37142857142857144,0.10672853828306261,0.2453171390013495,0.0812,"{""knowledge"": 34, ""comprehension"": 28, ""analysis"": 4, ""application"": 3, ""evaluation"": 1}"
+Majority_comprehension,70,0.738095238095238,0.37142857142857144,0.0,0.2,1.0,"{""comprehension"": 70}"
+Human_leave_one_out,70,0.6857142857142855,,,,,

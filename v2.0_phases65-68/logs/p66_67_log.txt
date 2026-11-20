@@ -1,0 +1,17 @@
+Set E size 1839  label disagreement intended vs consensus: 0.2229
+H5: {'test': 'H5 acc(M_E)-acc(M_I) on DASQ', 'est': np.float64(0.0004), 'ci_lo': np.float64(-0.0172), 'ci_hi': np.float64(0.018), 'mcnemar_b': 215, 'mcnemar_c': 214, 'mcnemar_p': np.float64(1.0), 'supported': np.False_}
+PROV n=1429  CL kept 1416  overlap PROV&CL 926
+            condition   DASQ  EDUQG  YLQ_voteloss  YLQ_acc    LAK
+P66_M_I_intended_on_E 0.4410 0.5194        0.7286   0.3143 0.4750
+  P66_M_E_expert_on_E 0.4414 0.3566        0.7095   0.3286 0.5500
+              P67_ALL 0.4564 0.4751        0.7476   0.2857 0.5500
+             P67_PROV 0.4508 0.4684        0.7286   0.3000 0.5250
+     P67_RAND(mean20) 0.4487 0.4772        0.7429   0.2907 0.5125
+               P67_CL 0.4100 0.4607        0.7476   0.3143 0.5250
+      P67_CLm(mean20) 0.4100 0.4607        0.7476   0.3143 0.5250
+                        test     est   ci_lo   ci_hi  mcnemar_b  mcnemar_c  mcnemar_p supported
+H5 acc(M_E)-acc(M_I) on DASQ  0.0004 -0.0172  0.0180      215.0      214.0        1.0     False
+        H6 PROV-RAND on DASQ  0.0021 -0.0091  0.0132        NaN        NaN        NaN     False
+            PROV-CLm on DASQ  0.0408  0.0266  0.0550        NaN        NaN        NaN      None
+            PROV-ALL on DASQ -0.0056 -0.0189  0.0077        NaN        NaN        NaN      None
+              CL-ALL on DASQ -0.0464 -0.0601 -0.0326        NaN        NaN        NaN      None

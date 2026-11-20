@@ -1,0 +1,32 @@
+{'icc': 0.5, 'true_risk': 0.4, 'videos': 236, 'mean_items': 300.0, 'row_hoeffding': np.float64(0.88875), 'row_cp': np.float64(0.974), 'video_hoeffding': np.float64(0.836)}
+{'icc': 0.5, 'true_risk': 0.4, 'videos': 500, 'mean_items': 635.593220338983, 'row_hoeffding': np.float64(0.9955), 'row_cp': np.float64(0.99975), 'video_hoeffding': np.float64(0.99175)}
+{'icc': 0.5, 'true_risk': 0.4, 'videos': 1000, 'mean_items': 1271.186440677966, 'row_hoeffding': np.float64(1.0), 'row_cp': np.float64(1.0), 'video_hoeffding': np.float64(1.0)}
+{'icc': 0.5, 'true_risk': 0.3, 'videos': 30, 'mean_items': 38.13559322033898, 'row_hoeffding': np.float64(0.62325), 'row_cp': np.float64(0.84125), 'video_hoeffding': np.float64(0.53125)}
+{'icc': 0.5, 'true_risk': 0.3, 'videos': 60, 'mean_items': 76.27118644067797, 'row_hoeffding': np.float64(0.9075), 'row_cp': np.float64(0.9765), 'video_hoeffding': np.float64(0.8615)}
+{'icc': 0.5, 'true_risk': 0.3, 'videos': 120, 'mean_items': 152.54237288135593, 'row_hoeffding': np.float64(0.99675), 'row_cp': np.float64(0.99975), 'video_hoeffding': np.float64(0.99425)}
+{'icc': 0.5, 'true_risk': 0.3, 'videos': 236, 'mean_items': 300.0, 'row_hoeffding': np.float64(1.0), 'row_cp': np.float64(1.0), 'video_hoeffding': np.float64(1.0)}
+{'icc': 0.5, 'true_risk': 0.3, 'videos': 500, 'mean_items': 635.593220338983, 'row_hoeffding': np.float64(1.0), 'row_cp': np.float64(1.0), 'video_hoeffding': np.float64(1.0)}
+{'icc': 0.5, 'true_risk': 0.3, 'videos': 1000, 'mean_items': 1271.186440677966, 'row_hoeffding': np.float64(1.0), 'row_cp': np.float64(1.0), 'video_hoeffding': np.float64(1.0)}
+
+NULL (true risk = cap): false-certification rates; limit δ=0.1 (+2SE=0.109)
+            row_cp  row_hoeffding  video_hoeffding
+icc videos                                        
+0.0 30      0.0800         0.0152           0.0105
+    60      0.0820         0.0165           0.0132
+    120     0.0850         0.0165           0.0122
+    236     0.0955         0.0155           0.0122
+    500     0.1050         0.0175           0.0142
+    1000    0.0902         0.0182           0.0107
+0.2 30      0.0952         0.0202           0.0127
+    60      0.0898         0.0208           0.0127
+    120     0.0938         0.0185           0.0115
+    236     0.0975         0.0185           0.0115
+    500     0.1028         0.0210           0.0125
+    1000    0.1075         0.0230           0.0122
+0.5 30      0.0990         0.0268           0.0135
+    60      0.1095         0.0290           0.0148
+    120     0.1092         0.0285           0.0115
+    236     0.1178         0.0275           0.0138
+    500     0.1208         0.0282           0.0102
+    1000    0.1295         0.0235           0.0092
+H3 video-level valid in all cells: True  | some row-level test invalid at ICC>=0.2: True  => H3 supported: True

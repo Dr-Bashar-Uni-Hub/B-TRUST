@@ -1,0 +1,17 @@
+ train   DASQ  SCAR-E  EDUQG  YLQ70  LAK40  T_mean  G0_lift  kappa_cv   G0
+  EDUB 0.3663  0.3007 0.2636 0.3286  0.200  0.2918   0.0004    0.2329 FAIL
+  DASQ    NaN  0.5253 0.3234 0.3714  0.325  0.3863   0.3087    0.5812 PASS
+SCAR-I 0.4564     NaN 0.4751 0.2857  0.550  0.4418   0.7086    0.8504 PASS
+SCAR-E 0.4414     NaN 0.3566 0.3286  0.550  0.4191   0.5775    0.7584 PASS
+ EDUQG 0.1374  0.1463    NaN 0.2714  0.200  0.1888   0.0000    0.0220 FAIL
+H7 Spearman(G0_lift, T_mean) = 1.000, exact one-sided p = 0.0083
+H7 Spearman(kappa_cv, T_mean) = 1.000, exact one-sided p = 0.0083
+
+Per-target accuracy minus target majority rate (skill over prior):
+         DASQ  SCAR-E  EDUQG  YLQ70  LAK40
+train                                     
+EDUB   -0.027   0.077 -0.467 -0.043  0.000
+DASQ      NaN   0.301 -0.408  0.000  0.125
+SCAR-I  0.064     NaN -0.256 -0.086  0.350
+SCAR-E  0.049     NaN -0.374 -0.043  0.350
+EDUQG  -0.255  -0.078    NaN -0.100  0.000

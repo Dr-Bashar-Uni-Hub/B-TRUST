@@ -1,0 +1,39 @@
+                 model  n  vote_loss  consolidated_acc  kappa  balanced_acc  perm_p_vs_independence
+                DAS_LR 70     0.7238            0.3714 0.1456        0.3528                  0.0034
+               A1_char 70     0.6762            0.4143 0.1954        0.3165                  0.0010
+                A2_aug 70     0.7381            0.3000 0.0878        0.2887                  0.0710
+           A3_balanced 70     0.8238            0.2286 0.1364        0.3441                  0.0006
+    Frozen_EduBloom_LR 70     0.7524            0.3286 0.0964        0.3183                  0.0792
+     Frozen_DistilBERT 70     0.7476            0.3714 0.1067        0.2453                  0.0812
+Majority_comprehension 70     0.7381            0.3714 0.0000        0.2000                  1.0000
+   Human_leave_one_out 70     0.6857               NaN    NaN           NaN                     NaN
+
+                        contrast    diff   ci_lo   ci_hi
+    DAS_LR - Frozen_EduBloom_LR -0.0286 -0.1216  0.0685
+     DAS_LR - Frozen_DistilBERT -0.0238 -0.1270  0.0746
+DAS_LR - Majority_comprehension -0.0143 -0.0821  0.0476
+               DAS_LR - A1_char  0.0476 -0.0101  0.1077
+                DAS_LR - A2_aug -0.0143 -0.0798  0.0524
+           DAS_LR - A3_balanced -0.1000 -0.1875 -0.0190
+             DAS_LR - Human_LOO  0.0381 -0.0556  0.1353
+
+PRIMARY H1 (DAS_LR - Frozen_EduBloom_LR CI upper < 0): False
+videos among relevant: 63
+
+ DAS_LR         analysis  application  comprehension  evaluation  synthesis
+consolidated                                                              
+analysis              3            2              9           1          0
+application           0            2              1           1          0
+comprehension         0            5             19           0          2
+evaluation            0            0              4           2          0
+knowledge             0            2             12           2          3
+
+LAK (acc column = exact McNemar p for McNemar rows; correct=DAS-only, n=discordant):
+                                model  correct  n    acc
+                              DAS_LR       13 40 0.3250
+                  Frozen_EduBloom_LR        6 40 0.1500
+                   Frozen_DistilBERT       10 40 0.2500
+McNemar DAS_LR vs Frozen_EduBloom_LR        7  7 0.0156
+ McNemar DAS_LR vs Frozen_DistilBERT        8 13 0.5811
+LAK reference distribution: {'Apply': 8, 'Create': 7, 'Evaluate': 7, 'Remember': 7, 'Analyze': 7, 'Understand': 7}
+LAK DAS_LR predictions: {'Understand': 30, 'Create': 4, 'Evaluate': 3, 'Analyze': 2, 'Apply': 1}

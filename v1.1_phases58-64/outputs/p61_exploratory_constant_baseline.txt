@@ -1,0 +1,3 @@
+G6: best constant (chosen WITH labels = optimistic) comprehension: vote loss 0.7381
+G3: best constant (chosen WITH labels = optimistic) low: vote loss 0.5524
+G2: best constant (chosen WITH labels = optimistic) LOTS: vote loss 0.4810

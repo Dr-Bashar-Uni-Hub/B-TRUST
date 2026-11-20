@@ -1,0 +1,7 @@
+ train  G0_lift  T_common
+  EDUB    0.000     0.264
+  DASQ    0.309     0.348
+SCAR-I    0.709     0.418
+SCAR-E    0.577     0.439
+ EDUQG    0.000     0.236
+EXPLORATORY common-target rho 0.9 exact one-sided p 0.0417

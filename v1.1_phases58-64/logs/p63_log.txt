@@ -1,0 +1,15 @@
+ seed  certified  n_certified_lambdas  cal_accepted_at_loosest  cal_videos  cal_vote_risk_loosest  cal_contam_loosest
+    0      False                    0                       18          59                  0.815               0.500
+    1      False                    0                       13          59                  0.744               0.385
+    2      False                    0                       12          59                  0.833               0.583
+    3      False                    0                       21          59                  0.825               0.429
+    4      False                    0                       14          59                  0.810               0.286
+    5      False                    0                        8          59                  0.792               0.125
+    6      False                    0                       20          59                  0.883               0.550
+    7      False                    0                       10          59                  0.900               0.400
+    8      False                    0                       19          59                  0.930               0.737
+    9      False                    0                       15          59                  0.733               0.267
+   10      False                    0                       20          59                  0.833               0.500
+   11      False                    0                       19          59                  0.772               0.263
+
+nonempty certified policies: 0 / 12

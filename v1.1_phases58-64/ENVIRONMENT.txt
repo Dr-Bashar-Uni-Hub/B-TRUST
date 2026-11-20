@@ -1,0 +1,9 @@
+python 3.12.3
+numpy 2.5.4
+pandas 3.0.6
+scikit-learn 1.9.1
+scipy 1.18.1
+joblib 1.6.0
+Ubuntu 24 container, OPENBLAS_NUM_THREADS=4, CPU only
+Frozen LR was pickled with scikit-learn 1.6.1; it loads with an InconsistentVersionWarning in 1.9.1 but reproduces all predictions exactly.
+No transformer models were run in v1.1 (Hugging Face was not reachable from the sandbox).
