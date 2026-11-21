@@ -1,0 +1,16 @@
+matched 1823, disagreements 408 (0.2238); budget 365; constant Brier 0.1737
+class_weight        None  balanced
+auroc_text  min    0.748     0.749
+            max    0.759     0.759
+ap_text     min    0.474     0.471
+            max    0.492     0.489
+brier_text  min    0.150     0.183
+            max    0.151     0.187
+mean_p_text min    0.220     0.414
+            max    0.223     0.418
+found_text  min  173.000   175.000
+            max  181.000   182.000
+auroc_len   min    0.515     0.515
+            max    0.542     0.541
+found_len   min   79.000    76.000
+            max   91.000    87.000
