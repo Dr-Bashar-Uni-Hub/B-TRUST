@@ -1,0 +1,3 @@
+method,review_budget,disagreements_found,recall_of_disagreements,precision_at_budget
+TF-IDF LR,365,173,0.42401960784313725,0.473972602739726
+Length/format LR,365,82,0.20098039215686275,0.22465753424657534

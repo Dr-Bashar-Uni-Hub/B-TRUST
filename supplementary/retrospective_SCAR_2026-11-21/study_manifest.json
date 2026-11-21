@@ -1,0 +1,13 @@
+{
+  "experiment": "retrospective SCAR intended-vs-expert-consensus disagreement screening",
+  "status": "exploratory; NOT prospective or independent educational validation",
+  "n_shared_unique": 1825,
+  "n_excluded_ambiguous": 2,
+  "n_analyzable": 1823,
+  "n_disagree": 408,
+  "review_budget_fraction": 0.2,
+  "cv": "5-fold stratified out-of-fold",
+  "seed": 20261121,
+  "predictors": "text only; no intended or expert labels as predictors",
+  "limitation": "Expert consensus exists only for selected SCAR items; possible selection bias; no proof of Bloom construct correctness."
+}

@@ -1,0 +1,60 @@
+{
+  "n": 1823,
+  "budget": 365,
+  "disagreements": 408,
+  "prevalence": 0.2238069116840373,
+  "text_found": 173,
+  "length_found": 82,
+  "random_expected": 81.68952276467361,
+  "random_95_count_interval": [
+    68.0,
+    96.0
+  ],
+  "hypergeom_tail_probability_fixed_selection": 1.5084462008843675e-33,
+  "text_precision": 0.473972602739726,
+  "length_precision": 0.22465753424657534,
+  "text_recall": 0.42401960784313725,
+  "length_recall": 0.20098039215686275,
+  "text_lift": 2.117774644104217,
+  "bootstrap_conditional_intervals": {
+    "text_precision": [
+      0.42191780821917807,
+      0.5287671232876713
+    ],
+    "length_precision": [
+      0.18356164383561643,
+      0.273972602739726
+    ],
+    "precision_difference": [
+      0.18904109589041096,
+      0.30684931506849317
+    ],
+    "text_recall": [
+      0.3875590093882205,
+      0.46464646464646464
+    ],
+    "length_recall": [
+      0.16850476378396664,
+      0.2397094430992736
+    ],
+    "recall_difference": [
+      0.16908212560386474,
+      0.2749326145552561
+    ],
+    "text_precision_minus_prevalence": [
+      0.20798773660757897,
+      0.2961745279119921
+    ],
+    "text_lift": [
+      1.935671435930756,
+      2.3206863152068635
+    ]
+  },
+  "caveats": [
+    "Bootstrap resamples fixed out-of-fold scores, does not refit models",
+    "Post-hoc analysis, exploratory",
+    "Hypergeometric p-value is descriptive for a fixed ranking and not a valid confirmatory p-value after selection/model fitting",
+    "Only SCAR expert-consensus subset; no prospective educational validation",
+    "No causal inference or full B-TRUST framework attribution"
+  ]
+}
